@@ -1,0 +1,73 @@
+@import "vars";
+
+*, *::after, *::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 16px;
+}
+
+body{
+  font-family: $ff-base;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: #fff;
+  color: $color-font;
+}
+
+button{
+  font-family: $ff-base;
+  font-weight: 500;
+  cursor: pointer;
+
+  &:focus{
+    outline: none;
+  }
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container{
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0px 10px;
+  overflow: hidden;
+}
+
+.page{
+  &__header{
+    padding-top: 2.875rem;
+  }
+
+  &__about{
+    // padding: 1.25rem 0;
+  }
+
+  &__features{
+    padding: 2.968rem 0 6.25rem;
+  }
+
+  &__product{
+    padding: 5rem 0;
+  }
+}
+
+.title{
+  font-size: 2.187rem;
+  line-height: 1.42;
+  font-weight: 500;
+  color: $black;
+}
+
+.desc{
+  line-height: 1.875;
+}
