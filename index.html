@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
   <title>LaslesVPN</title>
 </head>
@@ -46,115 +47,964 @@
       </div>
     </div>
   </header>
-  <!-- About -->
-  <section class="about page__about">
-    <div class="container">
-      <div class="info-progress about__info">
-          <div class="info-progress__item">
-            <img class="info-progress__icon" src="images/icons/user-icon.svg" alt="users">
-            <div class="info-progress__desc">
-              <span class="info-progress__num">90+</span>
-              <span class="info-progress__name">Пользователи</span>
+  <main class="main page__main">
+    <!-- About -->
+    <section class="about page__about">
+      <div class="container">
+        <div class="info-progress about__info">
+            <div class="info-progress__item">
+              <img class="info-progress__icon" src="images/icons/user-icon.svg" alt="users">
+              <div class="info-progress__desc">
+                <span class="info-progress__num">90+</span>
+                <span class="info-progress__name">Пользователи</span>
+              </div>
+            </div>
+            <div class="info-progress__item">
+              <img class="info-progress__icon" src="images/icons/location-icon.svg" alt="users">
+              <div class="info-progress__desc">
+                <span class="info-progress__num">30+</span>
+                <span class="info-progress__name">Расположение</span>
+              </div>
+            </div>
+            <div class="info-progress__item">
+              <img class="info-progress__icon" src="images/icons/server-icon.svg" alt="users">
+              <div class="info-progress__desc">
+                <span class="info-progress__num">50+</span>
+                <span class="info-progress__name">Сервера</span>
+              </div>
             </div>
           </div>
-          <div class="info-progress__item">
-            <img class="info-progress__icon" src="images/icons/location-icon.svg" alt="users">
-            <div class="info-progress__desc">
-              <span class="info-progress__num">30+</span>
-              <span class="info-progress__name">Расположение</span>
-            </div>
-          </div>
-          <div class="info-progress__item">
-            <img class="info-progress__icon" src="images/icons/server-icon.svg" alt="users">
-            <div class="info-progress__desc">
-              <span class="info-progress__num">50+</span>
-              <span class="info-progress__name">Сервера</span>
-            </div>
+      </div>
+    </section>
+    <!-- Features -->
+    <section class="features page__features">
+      <div class="container">
+        <div class="features-inner">
+          <img class="features__img" src="images/features/men.png" alt="Men">
+          <div class="features-info features__info">
+            <h2 class="features-info__title title">
+              Мы предоставляем множество функций, которые вы можете использовать
+            </h2>
+            <p class="features-info__subtitle subtitle">
+              Вы можете изучить функции, которые мы предоставляем, и иметь свои функции для каждой функции.
+            </p>
+            <h5 class="features-info__name">Мощная онлайн-защита.</h5>
+            <h5 class="features-info__name">Интернет без границ.</h5>
+            <h5 class="features-info__name">VPN с наддувом</h5>
+            <h5 class="features-info__name">Нет конкретных сроков.</h5>
           </div>
         </div>
-    </div>
-  </section>
-  <!-- Features -->
-  <section class="features page__features">
-    <div class="container">
-      <div class="features-inner">
-        <img class="features__img" src="images/features/men.png" alt="Men">
-        <div class="features-info features__info">
-          <h2 class="features-info__title title">
-            Мы предоставляем множество функций, которые вы можете использовать
-          </h2>
-          <p class="features-info__desc desc">
-            Вы можете изучить функции, которые мы предоставляем, и иметь свои функции для каждой функции.
-          </p>
-          <h5 class="features-info__name">Мощная онлайн-защита.</h5>
-          <h5 class="features-info__name">Интернет без границ.</h5>
-          <h5 class="features-info__name">VPN с наддувом</h5>
-          <h5 class="features-info__name">Нет конкретных сроков.</h5>
+      </div>
+    </section>
+    <!-- Product -->
+    <section class="product page__product">
+      <div class="product-text product__text">
+        <h2 class="product-text__title title">
+          Выберите свой план
+        </h2>
+        <p class="product-text__subtitle subtitle">
+          Давайте выберем пакет, который вам больше всего подходит, и рассмотримего весело и радужно.
+        </p>
+      </div>
+      <div class="product-cards product__cards">
+        <div class="product-cards__item card">
+            <img class="card__img" src="images/poducts/surprise.png" alt="Plan">
+            <h4 class="card__title">Бесплатный план</h4>
+            <div class="card-desc card__desc">
+              <h5 class="card-desc__name">Безлимитный трафик</h5>
+              <h5 class="card-desc__name">Зашифрованное соединение</h5>
+              <h5 class="card-desc__name">Нет журналов трафика</h5>
+              <h5 class="card-desc__name">Работает на всех устройствах</h5>
+            </div>
+            <div class="card-price">
+              <span class="card-price__num">Free</span>
+              <span class="card-price__moth"></span>
+            </div>
+            <button class="card__button button_sm">Выбрать</button>
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- Product -->
-  <section class="product page__product">
-    <div class="product-text product__text">
-      <h2 class="product-text__title title">
-        Выберите свой план
-      </h2>
-      <p class="product-text__desc desc">
-        Давайте выберем пакет, который вам больше всего подходит, и рассмотримего весело и радужно.
-      </p>
-    </div>
-    <div class="product-cards product__cards">
-      <div class="product-cards__item card">
+        <div class="product-cards__item card">
+            <img class="card__img" src="images/poducts/surprise.png" alt="Plan">
+            <h4 class="card__title">Стандартный план</h4>
+            <div class="card-desc card__desc">
+              <h5 class="card-desc__name">Безлимитный трафик</h5>
+              <h5 class="card-desc__name">Зашифрованное соединение</h5>
+              <h5 class="card-desc__name">Нет журналов трафика</h5>
+              <h5 class="card-desc__name">Работает на всех устройствах</h5>
+              <h5 class="card-desc__name">Подключиться везде</h5>
+            </div>
+            <div class="card-price">
+              <span class="card-price__num">$9</span>
+              <span class="card-price__moth"> / мес</span>
+            </div>
+            <button class="card__button button_sm">Выбрать</button>
+        </div>
+        <div class="product-cards__item card">
           <img class="card__img" src="images/poducts/surprise.png" alt="Plan">
-          <h4 class="card__title">Бесплатный план</h4>
-          <div class="card-desc card__desc">
-            <h5 class="card-desc__name">Безлимитный трафик</h5>
-            <h5 class="card-desc__name">Зашифрованное соединение</h5>
-            <h5 class="card-desc__name">Нет журналов трафика</h5>
-            <h5 class="card-desc__name">Работает на всех устройствах</h5>
-          </div>
-          <div class="card-price">
-            <span class="card-price__num">Free</span>
-            <span class="card-price__moth"></span>
-          </div>
-          <button class="card__button button_sm">Выбрать</button>
-      </div>
-      <div class="product-cards__item card">
-          <img class="card__img" src="images/poducts/surprise.png" alt="Plan">
-          <h4 class="card__title">Стандартный план</h4>
+          <h4 class="card__title">Премиумный план</h4>
           <div class="card-desc card__desc">
             <h5 class="card-desc__name">Безлимитный трафик</h5>
             <h5 class="card-desc__name">Зашифрованное соединение</h5>
             <h5 class="card-desc__name">Нет журналов трафика</h5>
             <h5 class="card-desc__name">Работает на всех устройствах</h5>
             <h5 class="card-desc__name">Подключиться везде</h5>
+            <h5 class="card-desc__name">Получите новые возможности</h5>
           </div>
           <div class="card-price">
-            <span class="card-price__num">$9</span>
+            <span class="card-price__num">$12</span>
             <span class="card-price__moth"> / мес</span>
           </div>
           <button class="card__button button_sm">Выбрать</button>
+        </div>
       </div>
-      <div class="product-cards__item card">
-        <img class="card__img" src="images/poducts/surprise.png" alt="Plan">
-        <h4 class="card__title">Премиумный план</h4>
-        <div class="card-desc card__desc">
-          <h5 class="card-desc__name">Безлимитный трафик</h5>
-          <h5 class="card-desc__name">Зашифрованное соединение</h5>
-          <h5 class="card-desc__name">Нет журналов трафика</h5>
-          <h5 class="card-desc__name">Работает на всех устройствах</h5>
-          <h5 class="card-desc__name">Подключиться везде</h5>
-          <h5 class="card-desc__name">Получите новые возможности</h5>
+    </section>
+    <!-- Network -->
+    <section class="network page__network">
+      <div class="container">
+        <div class="network-text network__text">
+          <h2 class="network-text__title title">
+            Огромная глобальная сеть быстрых VPN
+          </h2>
+          <p class="network-text__subtitle subtitle">
+            Смотрите LaslesVPN повсюду, чтобы вам было легче перемещаться.
+          </p>
         </div>
-        <div class="card-price">
-          <span class="card-price__num">$12</span>
-          <span class="card-price__moth"> / мес</span>
+        <div class="map network__map">
+          <img class="map__img" src="images/map.svg" alt="Локации городов, использующих VPN">
+          <span class="map__loc map__loc_xl map__loc_1">
+            <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d)">
+                <circle cx="34.2009" cy="22.4883" r="21.6937" fill="white" />
+              </g>
+              <circle cx="34.2012" cy="22.4888" r="16.3214" fill="white" stroke="#F53838" stroke-width="3.06492" />
+              <circle cx="34.2006" cy="22.4893" r="7.82584" fill="#F53838" />
+              <defs>
+                <filter id="filter0_d" x="0.247525" y="0.794678" width="67.9067" height="67.9067" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                  <feOffset dy="12.2597" />
+                  <feGaussianBlur stdDeviation="6.12984" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0.14 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          
+          </span>
+          <span class="map__loc map__loc_xl map__loc_2">
+            <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d)">
+                <circle cx="34.2009" cy="22.4883" r="21.6937" fill="white" />
+              </g>
+              <circle cx="34.2012" cy="22.4888" r="16.3214" fill="white" stroke="#F53838" stroke-width="3.06492" />
+              <circle cx="34.2006" cy="22.4893" r="7.82584" fill="#F53838" />
+              <defs>
+                <filter id="filter0_d" x="0.247525" y="0.794678" width="67.9067" height="67.9067" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                  <feOffset dy="12.2597" />
+                  <feGaussianBlur stdDeviation="6.12984" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0.14 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          
+          </span>
+          <span class="map__loc map__loc_lg map__loc_3">
+            <svg width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d)">
+                <circle cx="29.6562" cy="18.7738" r="18.3702" fill="white" />
+              </g>
+              <circle cx="29.6565" cy="18.7742" r="13.821" fill="white" stroke="#F53838" stroke-width="2.59537" />
+              <circle cx="29.6559" cy="18.7745" r="6.62692" fill="#F53838" />
+              <defs>
+                <filter id="filter0_d" x="0.904513" y="0.403564" width="57.5034" height="57.5034" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                  <feOffset dy="10.3815" />
+                  <feGaussianBlur stdDeviation="5.19075" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0.14 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          
+          </span>
+          <span class="map__loc map__loc_lg map__loc_4">
+            <svg width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d)">
+                <circle cx="29.6562" cy="18.7738" r="18.3702" fill="white" />
+              </g>
+              <circle cx="29.6565" cy="18.7742" r="13.821" fill="white" stroke="#F53838" stroke-width="2.59537" />
+              <circle cx="29.6559" cy="18.7745" r="6.62692" fill="#F53838" />
+              <defs>
+                <filter id="filter0_d" x="0.904513" y="0.403564" width="57.5034" height="57.5034" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                  <feOffset dy="10.3815" />
+                  <feGaussianBlur stdDeviation="5.19075" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0.14 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          
+          </span>
+          <span class="map__loc map__loc_lg map__loc_5">
+            <svg width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d)">
+                <circle cx="29.6562" cy="18.7738" r="18.3702" fill="white" />
+              </g>
+              <circle cx="29.6565" cy="18.7742" r="13.821" fill="white" stroke="#F53838" stroke-width="2.59537" />
+              <circle cx="29.6559" cy="18.7745" r="6.62692" fill="#F53838" />
+              <defs>
+                <filter id="filter0_d" x="0.904513" y="0.403564" width="57.5034" height="57.5034" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                  <feOffset dy="10.3815" />
+                  <feGaussianBlur stdDeviation="5.19075" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0.14 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          
+          </span>
+          <span class="map__loc map__loc_lg map__loc_6">
+            <svg width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d)">
+                <circle cx="29.6562" cy="18.7738" r="18.3702" fill="white" />
+              </g>
+              <circle cx="29.6565" cy="18.7742" r="13.821" fill="white" stroke="#F53838" stroke-width="2.59537" />
+              <circle cx="29.6559" cy="18.7745" r="6.62692" fill="#F53838" />
+              <defs>
+                <filter id="filter0_d" x="0.904513" y="0.403564" width="57.5034" height="57.5034" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                  <feOffset dy="10.3815" />
+                  <feGaussianBlur stdDeviation="5.19075" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0.14 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          
+          </span>
+          <span class="map__loc map__loc_lg map__loc_7">
+            <svg width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d)">
+                <circle cx="29.6562" cy="18.7738" r="18.3702" fill="white" />
+              </g>
+              <circle cx="29.6565" cy="18.7742" r="13.821" fill="white" stroke="#F53838" stroke-width="2.59537" />
+              <circle cx="29.6559" cy="18.7745" r="6.62692" fill="#F53838" />
+              <defs>
+                <filter id="filter0_d" x="0.904513" y="0.403564" width="57.5034" height="57.5034" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                  <feOffset dy="10.3815" />
+                  <feGaussianBlur stdDeviation="5.19075" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0.14 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          
+          </span>
+          <span class="map__loc map__loc_lg map__loc_8">
+            <svg width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d)">
+                <circle cx="29.6562" cy="18.7738" r="18.3702" fill="white" />
+              </g>
+              <circle cx="29.6565" cy="18.7742" r="13.821" fill="white" stroke="#F53838" stroke-width="2.59537" />
+              <circle cx="29.6559" cy="18.7745" r="6.62692" fill="#F53838" />
+              <defs>
+                <filter id="filter0_d" x="0.904513" y="0.403564" width="57.5034" height="57.5034" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                  <feOffset dy="10.3815" />
+                  <feGaussianBlur stdDeviation="5.19075" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0.14 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          
+          </span>
+          <span class="map__loc map__loc_lg map__loc_9">
+            <svg width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d)">
+                <circle cx="29.6562" cy="18.7738" r="18.3702" fill="white" />
+              </g>
+              <circle cx="29.6565" cy="18.7742" r="13.821" fill="white" stroke="#F53838" stroke-width="2.59537" />
+              <circle cx="29.6559" cy="18.7745" r="6.62692" fill="#F53838" />
+              <defs>
+                <filter id="filter0_d" x="0.904513" y="0.403564" width="57.5034" height="57.5034" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                  <feOffset dy="10.3815" />
+                  <feGaussianBlur stdDeviation="5.19075" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0.14 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          
+          </span>
+          <span class="map__loc map__lock_md map__loc_10">
+            <svg width="42" height="41" viewBox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d)">
+                <circle cx="21" cy="13.5253" r="12.8124" fill="white" />
+              </g>
+              <circle cx="21.0001" cy="13.5255" r="9.63949" fill="white" stroke="#F53838" stroke-width="1.81015" />
+              <circle cx="20.9998" cy="13.5258" r="4.62197" fill="#F53838" />
+              <defs>
+                <filter id="filter0_d" x="0.947007" y="0.712891" width="40.106" height="40.106" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                  <feOffset dy="7.24061" />
+                  <feGaussianBlur stdDeviation="3.62031" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0.14 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          
+          </span>
+          <span class="map__loc map__lock_md map__loc_11">
+            <svg width="42" height="41" viewBox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d)">
+                <circle cx="21" cy="13.5253" r="12.8124" fill="white" />
+              </g>
+              <circle cx="21.0001" cy="13.5255" r="9.63949" fill="white" stroke="#F53838" stroke-width="1.81015" />
+              <circle cx="20.9998" cy="13.5258" r="4.62197" fill="#F53838" />
+              <defs>
+                <filter id="filter0_d" x="0.947007" y="0.712891" width="40.106" height="40.106" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                  <feOffset dy="7.24061" />
+                  <feGaussianBlur stdDeviation="3.62031" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0.14 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          
+          </span>
+          <span class="map__loc map__lock_md map__loc_12">
+            <svg width="42" height="41" viewBox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d)">
+                <circle cx="21" cy="13.5253" r="12.8124" fill="white" />
+              </g>
+              <circle cx="21.0001" cy="13.5255" r="9.63949" fill="white" stroke="#F53838" stroke-width="1.81015" />
+              <circle cx="20.9998" cy="13.5258" r="4.62197" fill="#F53838" />
+              <defs>
+                <filter id="filter0_d" x="0.947007" y="0.712891" width="40.106" height="40.106" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                  <feOffset dy="7.24061" />
+                  <feGaussianBlur stdDeviation="3.62031" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0.14 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          
+          </span>
+          <span class="map__loc map__lock_md map__loc_13">
+            <svg width="42" height="41" viewBox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d)">
+                <circle cx="21" cy="13.5253" r="12.8124" fill="white" />
+              </g>
+              <circle cx="21.0001" cy="13.5255" r="9.63949" fill="white" stroke="#F53838" stroke-width="1.81015" />
+              <circle cx="20.9998" cy="13.5258" r="4.62197" fill="#F53838" />
+              <defs>
+                <filter id="filter0_d" x="0.947007" y="0.712891" width="40.106" height="40.106" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                  <feOffset dy="7.24061" />
+                  <feGaussianBlur stdDeviation="3.62031" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0.14 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          
+          </span>
+          <span class="map__loc map__lock_md map__loc_14">
+            <svg width="42" height="41" viewBox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d)">
+                <circle cx="21" cy="13.5253" r="12.8124" fill="white" />
+              </g>
+              <circle cx="21.0001" cy="13.5255" r="9.63949" fill="white" stroke="#F53838" stroke-width="1.81015" />
+              <circle cx="20.9998" cy="13.5258" r="4.62197" fill="#F53838" />
+              <defs>
+                <filter id="filter0_d" x="0.947007" y="0.712891" width="40.106" height="40.106" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                  <feOffset dy="7.24061" />
+                  <feGaussianBlur stdDeviation="3.62031" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0.14 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          
+          </span>
+          <span class="map__loc map__lock_md map__loc_15">
+            <svg width="42" height="41" viewBox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d)">
+                <circle cx="21" cy="13.5253" r="12.8124" fill="white" />
+              </g>
+              <circle cx="21.0001" cy="13.5255" r="9.63949" fill="white" stroke="#F53838" stroke-width="1.81015" />
+              <circle cx="20.9998" cy="13.5258" r="4.62197" fill="#F53838" />
+              <defs>
+                <filter id="filter0_d" x="0.947007" y="0.712891" width="40.106" height="40.106" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                  <feOffset dy="7.24061" />
+                  <feGaussianBlur stdDeviation="3.62031" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0.14 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          
+          </span>
+          <span class="map__loc map__lock_md map__loc_16">
+            <svg width="42" height="41" viewBox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d)">
+                <circle cx="21" cy="13.5253" r="12.8124" fill="white" />
+              </g>
+              <circle cx="21.0001" cy="13.5255" r="9.63949" fill="white" stroke="#F53838" stroke-width="1.81015" />
+              <circle cx="20.9998" cy="13.5258" r="4.62197" fill="#F53838" />
+              <defs>
+                <filter id="filter0_d" x="0.947007" y="0.712891" width="40.106" height="40.106" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                  <feOffset dy="7.24061" />
+                  <feGaussianBlur stdDeviation="3.62031" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0.14 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          
+          </span>
+          <span class="map__loc map__lock_md map__loc_17">
+            <svg width="42" height="41" viewBox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d)">
+                <circle cx="21" cy="13.5253" r="12.8124" fill="white" />
+              </g>
+              <circle cx="21.0001" cy="13.5255" r="9.63949" fill="white" stroke="#F53838" stroke-width="1.81015" />
+              <circle cx="20.9998" cy="13.5258" r="4.62197" fill="#F53838" />
+              <defs>
+                <filter id="filter0_d" x="0.947007" y="0.712891" width="40.106" height="40.106" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                  <feOffset dy="7.24061" />
+                  <feGaussianBlur stdDeviation="3.62031" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0.14 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          
+          </span>
+          <span class="map__loc map__lock_md map__loc_18">
+            <svg width="42" height="41" viewBox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d)">
+                <circle cx="21" cy="13.5253" r="12.8124" fill="white" />
+              </g>
+              <circle cx="21.0001" cy="13.5255" r="9.63949" fill="white" stroke="#F53838" stroke-width="1.81015" />
+              <circle cx="20.9998" cy="13.5258" r="4.62197" fill="#F53838" />
+              <defs>
+                <filter id="filter0_d" x="0.947007" y="0.712891" width="40.106" height="40.106" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                  <feOffset dy="7.24061" />
+                  <feGaussianBlur stdDeviation="3.62031" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0.14 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          
+          </span>
+          <span class="map__loc map__loc_sm map__loc_19">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d)">
+                <circle cx="15.8381" cy="10.7665" r="9.77574" fill="white" />
+              </g>
+              <circle cx="15.8382" cy="10.7666" r="7.35487" fill="white" stroke="#F53838" stroke-width="1.38113" />
+              <circle cx="15.8379" cy="10.7669" r="3.52653" fill="#F53838" />
+              <defs>
+                <filter id="filter0_d" x="0.537779" y="0.990723" width="30.6006" height="30.6006" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                  <feOffset dy="5.52454" />
+                  <feGaussianBlur stdDeviation="2.76227" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0.14 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          
+          </span>
+          <span class="map__loc map__loc_sm map__loc_20">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d)">
+                <circle cx="15.8381" cy="10.7665" r="9.77574" fill="white" />
+              </g>
+              <circle cx="15.8382" cy="10.7666" r="7.35487" fill="white" stroke="#F53838" stroke-width="1.38113" />
+              <circle cx="15.8379" cy="10.7669" r="3.52653" fill="#F53838" />
+              <defs>
+                <filter id="filter0_d" x="0.537779" y="0.990723" width="30.6006" height="30.6006" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                  <feOffset dy="5.52454" />
+                  <feGaussianBlur stdDeviation="2.76227" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0.14 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          
+          </span>
+          <span class="map__loc map__loc_sm map__loc_21">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d)">
+                <circle cx="15.8381" cy="10.7665" r="9.77574" fill="white" />
+              </g>
+              <circle cx="15.8382" cy="10.7666" r="7.35487" fill="white" stroke="#F53838" stroke-width="1.38113" />
+              <circle cx="15.8379" cy="10.7669" r="3.52653" fill="#F53838" />
+              <defs>
+                <filter id="filter0_d" x="0.537779" y="0.990723" width="30.6006" height="30.6006" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                  <feOffset dy="5.52454" />
+                  <feGaussianBlur stdDeviation="2.76227" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0.14 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          
+          </span>
+          <span class="map__loc map__loc_sm map__loc_22">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d)">
+                <circle cx="15.8381" cy="10.7665" r="9.77574" fill="white" />
+              </g>
+              <circle cx="15.8382" cy="10.7666" r="7.35487" fill="white" stroke="#F53838" stroke-width="1.38113" />
+              <circle cx="15.8379" cy="10.7669" r="3.52653" fill="#F53838" />
+              <defs>
+                <filter id="filter0_d" x="0.537779" y="0.990723" width="30.6006" height="30.6006" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                  <feOffset dy="5.52454" />
+                  <feGaussianBlur stdDeviation="2.76227" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0.14 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          
+          </span>
+          <span class="map__loc map__loc_sm map__loc_23">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d)">
+                <circle cx="15.8381" cy="10.7665" r="9.77574" fill="white" />
+              </g>
+              <circle cx="15.8382" cy="10.7666" r="7.35487" fill="white" stroke="#F53838" stroke-width="1.38113" />
+              <circle cx="15.8379" cy="10.7669" r="3.52653" fill="#F53838" />
+              <defs>
+                <filter id="filter0_d" x="0.537779" y="0.990723" width="30.6006" height="30.6006" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                  <feOffset dy="5.52454" />
+                  <feGaussianBlur stdDeviation="2.76227" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0.14 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          
+          </span>
+          <span class="map__loc map__loc_sm map__loc_24">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d)">
+                <circle cx="15.8381" cy="10.7665" r="9.77574" fill="white" />
+              </g>
+              <circle cx="15.8382" cy="10.7666" r="7.35487" fill="white" stroke="#F53838" stroke-width="1.38113" />
+              <circle cx="15.8379" cy="10.7669" r="3.52653" fill="#F53838" />
+              <defs>
+                <filter id="filter0_d" x="0.537779" y="0.990723" width="30.6006" height="30.6006" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                  <feOffset dy="5.52454" />
+                  <feGaussianBlur stdDeviation="2.76227" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0.14 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          
+          </span>
+          <span class="map__loc map__loc_sm map__loc_25">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d)">
+                <circle cx="15.8381" cy="10.7665" r="9.77574" fill="white" />
+              </g>
+              <circle cx="15.8382" cy="10.7666" r="7.35487" fill="white" stroke="#F53838" stroke-width="1.38113" />
+              <circle cx="15.8379" cy="10.7669" r="3.52653" fill="#F53838" />
+              <defs>
+                <filter id="filter0_d" x="0.537779" y="0.990723" width="30.6006" height="30.6006" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                  <feOffset dy="5.52454" />
+                  <feGaussianBlur stdDeviation="2.76227" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0.14 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          
+          </span>
+          <span class="map__loc map__loc_sm map__loc_26">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d)">
+                <circle cx="15.8381" cy="10.7665" r="9.77574" fill="white" />
+              </g>
+              <circle cx="15.8382" cy="10.7666" r="7.35487" fill="white" stroke="#F53838" stroke-width="1.38113" />
+              <circle cx="15.8379" cy="10.7669" r="3.52653" fill="#F53838" />
+              <defs>
+                <filter id="filter0_d" x="0.537779" y="0.990723" width="30.6006" height="30.6006" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                  <feOffset dy="5.52454" />
+                  <feGaussianBlur stdDeviation="2.76227" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0.14 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          
+          </span>
+          <span class="map__loc map__loc_sm map__loc_27">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d)">
+                <circle cx="15.8381" cy="10.7665" r="9.77574" fill="white" />
+              </g>
+              <circle cx="15.8382" cy="10.7666" r="7.35487" fill="white" stroke="#F53838" stroke-width="1.38113" />
+              <circle cx="15.8379" cy="10.7669" r="3.52653" fill="#F53838" />
+              <defs>
+                <filter id="filter0_d" x="0.537779" y="0.990723" width="30.6006" height="30.6006" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                  <feOffset dy="5.52454" />
+                  <feGaussianBlur stdDeviation="2.76227" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0.14 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          
+          </span>
+          <span class="map__loc map__loc_sm map__loc_28">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d)">
+                <circle cx="15.8381" cy="10.7665" r="9.77574" fill="white" />
+              </g>
+              <circle cx="15.8382" cy="10.7666" r="7.35487" fill="white" stroke="#F53838" stroke-width="1.38113" />
+              <circle cx="15.8379" cy="10.7669" r="3.52653" fill="#F53838" />
+              <defs>
+                <filter id="filter0_d" x="0.537779" y="0.990723" width="30.6006" height="30.6006" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                  <feOffset dy="5.52454" />
+                  <feGaussianBlur stdDeviation="2.76227" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0.14 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          
+          </span>
+          <span class="map__loc map__loc_sm map__loc_29">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d)">
+                <circle cx="15.8381" cy="10.7665" r="9.77574" fill="white" />
+              </g>
+              <circle cx="15.8382" cy="10.7666" r="7.35487" fill="white" stroke="#F53838" stroke-width="1.38113" />
+              <circle cx="15.8379" cy="10.7669" r="3.52653" fill="#F53838" />
+              <defs>
+                <filter id="filter0_d" x="0.537779" y="0.990723" width="30.6006" height="30.6006" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+                  <feOffset dy="5.52454" />
+                  <feGaussianBlur stdDeviation="2.76227" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0 0.529167 0 0 0 0.14 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          
+          </span>
         </div>
-        <button class="card__button button_sm">Выбрать</button>
+        <div class="network__spons spons">
+          <a class="spons__link" href="https://www.netflix.com/ru/" target="_blank" title="Netflix"><img class="spons__img" src="images/spons/netflix.svg" alt="Netflix"></a>
+          <a class="spons__link" href="https://www.reddit.com/" target="_blank" title="Reddit"><img class="spons__img" src="images/spons/reddit.svg" alt="Reddit"></a>
+          <a class="spons__link" href="https://www.amazon.com/" target="_blank" title="Amazon"><img class="spons__img" src="images/spons/amazon.svg" alt="Amazon"></a>
+          <a class="spons__link" href="https://discord.com/" target="_blank" title="Discord"><img class="spons__img" src="images/spons/discord.svg" alt="Discord"></a>
+          <a class="spons__link" href="https://www.spotify.com/ru-ru/" target="_blank" title="Spotify"><img class="spons__img" src="images/spons/spotify.svg" alt="Spotify"></a>
+        </div>
+      </div>
+    </section>
+    <!-- Reviews -->
+    <section class="reviews page__reviews">
+        <div class="reviews-text reviews__text">
+          <h2 class="reviews-text__title title">
+            Нам доверяют тысячи довольных клиентов
+          </h2>
+          <p class="reviews-text__subtitle subtitle">
+            Это истории наших клиентов, которые с большим удовольствием присоединились к нам, воспользовавшись этой безумной
+            функцией.
+          </p>
+        </div>
+        <div class="reviews-slider reviews__slider swiper-container">
+          <div class="swiper-wrapper">
+          </div>
+          <div class="swiper-nav">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-buttons">
+              <div class="swiper-button swiper-button_prev">
+                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M18.75 8.00291H3.925L8.4625 2.55291C8.67467 2.29764 8.77675 1.96854 8.74628 1.638C8.7158 1.30747 8.55527 1.00258 8.3 0.790408C8.04473 0.578235 7.71563 0.476157 7.3851 0.506632C7.05456 0.537107 6.74967 0.697637 6.5375 0.952908L0.2875 8.45291C0.245451 8.51256 0.207849 8.57523 0.175 8.64041C0.175 8.70291 0.175 8.74041 0.0875002 8.80291C0.0308421 8.94623 0.0011764 9.0988 0 9.25291C0.0011764 9.40702 0.0308421 9.55958 0.0875002 9.70291C0.0875002 9.76541 0.0874998 9.80291 0.175 9.86541C0.207849 9.93058 0.245451 9.99325 0.2875 10.0529L6.5375 17.5529C6.65503 17.694 6.8022 17.8075 6.96856 17.8853C7.13491 17.963 7.31636 18.0032 7.5 18.0029C7.79207 18.0035 8.07511 17.9018 8.3 17.7154C8.42657 17.6105 8.5312 17.4816 8.60789 17.3362C8.68458 17.1907 8.73183 17.0316 8.74692 16.8679C8.76202 16.7042 8.74466 16.5391 8.69586 16.3821C8.64705 16.2251 8.56775 16.0792 8.4625 15.9529L3.925 10.5029H18.75C19.0815 10.5029 19.3995 10.3712 19.6339 10.1368C19.8683 9.90237 20 9.58443 20 9.25291C20 8.92139 19.8683 8.60345 19.6339 8.36902C19.3995 8.1346 19.0815 8.00291 18.75 8.00291Z"
+                    fill="currentColor" />
+                </svg>
+              </div>
+              <div class="swiper-button swiper-button_next">
+                <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1.25 8.00291H16.075L11.5375 2.55291C11.3253 2.29764 11.2232 1.96854 11.2537 1.638C11.2842 1.30747 11.4447 1.00258 11.7 0.790408C11.9553 0.578235 12.2844 0.476157 12.6149 0.506632C12.9454 0.537107 13.2503 0.697637 13.4625 0.952908L19.7125 8.45291C19.7545 8.51256 19.7922 8.57523 19.825 8.64041C19.825 8.70291 19.825 8.74041 19.9125 8.80291C19.9692 8.94623 19.9988 9.0988 20 9.25291C19.9988 9.40702 19.9692 9.55958 19.9125 9.70291C19.9125 9.76541 19.9125 9.80291 19.825 9.86541C19.7922 9.93058 19.7545 9.99325 19.7125 10.0529L13.4625 17.5529C13.345 17.694 13.1978 17.8075 13.0314 17.8853C12.8651 17.963 12.6836 18.0032 12.5 18.0029C12.2079 18.0035 11.9249 17.9018 11.7 17.7154C11.5734 17.6105 11.4688 17.4816 11.3921 17.3362C11.3154 17.1907 11.2682 17.0316 11.2531 16.8679C11.238 16.7042 11.2553 16.5391 11.3041 16.3821C11.3529 16.2251 11.4322 16.0792 11.5375 15.9529L16.075 10.5029H1.25C0.91848 10.5029 0.600536 10.3712 0.366116 10.1368C0.131695 9.90237 0 9.58443 0 9.25291C0 8.92139 0.131695 8.60345 0.366116 8.36902C0.600536 8.1346 0.91848 8.00291 1.25 8.00291Z"
+                    fill="currentColor" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="footer page__footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-info">
+          <a class="footer__link" href="#"><img class="logo footer__logo" src="images/header/logo.svg" alt="LaslesVPN"></a>
+          <p class="footer__text">
+            LaslesVPN - это частная виртуальная сеть с уникальными функциями и высоким уровнем безопасности.
+          </p>
+          <div class="social footer__social">
+            <a class="social__link" href="#">
+              <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                y="0px" viewBox="0 0 155.139 155.139" style="enable-background:new 0 0 155.139 155.139;" xml:space="preserve">
+                <g>
+                  <path id="f_1_" style="fill:currentColor;" d="M89.584,155.139V84.378h23.742l3.562-27.585H89.584V39.184
+              		c0-7.984,2.208-13.425,13.67-13.425l14.595-0.006V1.08C115.325,0.752,106.661,0,96.577,0C75.52,0,61.104,12.853,61.104,36.452
+              		v20.341H37.29v27.585h23.814v70.761H89.584z" />
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+              </svg>
+    
+            </a>
+            <a class="social__link" href="#">
+              <svg height="681pt" viewBox="-21 -81 681.33464 681" width="681pt" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m200.964844 515.292969c241.050781 0 372.871094-199.703125 372.871094-372.871094 0-5.671875-.117188-11.320313-.371094-16.9375 25.585937-18.5 47.824218-41.585937 65.371094-67.863281-23.480469 10.441406-48.753907 17.460937-75.257813 20.636718 27.054687-16.230468 47.828125-41.894531 57.625-72.488281-25.320313 15.011719-53.363281 25.917969-83.214844 31.808594-23.914062-25.472656-57.964843-41.402344-95.664062-41.402344-72.367188 0-131.058594 58.6875-131.058594 131.03125 0 10.289063 1.152344 20.289063 3.398437 29.882813-108.917968-5.480469-205.503906-57.625-270.132812-136.921875-11.25 19.363281-17.742188 41.863281-17.742188 65.871093 0 45.460938 23.136719 85.605469 58.316407 109.082032-21.5-.660156-41.695313-6.5625-59.351563-16.386719-.019531.550781-.019531 1.085937-.019531 1.671875 0 63.46875 45.171875 116.460938 105.144531 128.46875-11.015625 2.996094-22.605468 4.609375-34.558594 4.609375-8.429687 0-16.648437-.828125-24.632812-2.363281 16.683594 52.070312 65.066406 89.960937 122.425781 91.023437-44.855469 35.15625-101.359375 56.097657-162.769531 56.097657-10.5625 0-21.003906-.605469-31.2617188-1.816407 57.9999998 37.175781 126.8710938 58.871094 200.8867188 58.871094" />
+              </svg>
+            </a>
+            <a class="social__link" href="#">
+              <svg height="512pt" viewBox="0 0 512 512.00006" width="512pt" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m261.039062 512c-1.695312 0-3.390624 0-5.097656-.007812-40.132812.097656-77.214844-.921876-113.277344-3.117188-33.0625-2.011719-63.242187-13.4375-87.28125-33.039062-23.195312-18.914063-39.035156-44.488282-47.078124-76.003907-7-27.4375-7.371094-54.371093-7.726563-80.421875-.257813-18.691406-.5234375-40.839844-.578125-63.363281.0546875-22.617187.320312-44.765625.578125-63.457031.355469-26.046875.726563-52.980469 7.726563-80.421875 8.042968-31.515625 23.882812-57.089844 47.078124-76.003907 24.039063-19.601562 54.21875-31.027343 87.285157-33.039062 36.0625-2.191406 73.152343-3.2148438 113.371093-3.1171875 40.144532-.0859375 77.214844.9257815 113.277344 3.1171875 33.0625 2.011719 63.242188 13.4375 87.28125 33.039062 23.199219 18.914063 39.035156 44.488282 47.078125 76.003907 7 27.4375 7.371094 54.375 7.726563 80.421875.257812 18.691406.527344 40.839844.578125 63.363281v.09375c-.050781 22.523437-.320313 44.671875-.578125 63.363281-.355469 26.046875-.722656 52.980469-7.726563 80.421875-8.042969 31.515625-23.878906 57.089844-47.078125 76.003907-24.039062 19.601562-54.21875 31.027343-87.28125 33.039062-34.535156 2.101562-70.011718 3.125-108.277344 3.125zm-5.097656-40.007812c39.480469.09375 75.730469-.902344 110.945313-3.042969 25-1.519531 46.675781-9.632813 64.433593-24.113281 16.414063-13.386719 27.71875-31.855469 33.597657-54.894532 5.828125-22.839844 6.164062-47.363281 6.488281-71.078125.253906-18.566406.519531-40.558593.574219-62.863281-.054688-22.308594-.320313-44.296875-.574219-62.863281-.324219-23.714844-.660156-48.238281-6.488281-71.082031-5.878907-23.039063-17.183594-41.507813-33.597657-54.894532-17.757812-14.476562-39.433593-22.589844-64.433593-24.109375-35.214844-2.144531-71.464844-3.132812-110.851563-3.046875-39.472656-.09375-75.726562.902344-110.941406 3.046875-25 1.519531-46.675781 9.632813-64.433594 24.109375-16.414062 13.386719-27.71875 31.855469-33.597656 54.894532-5.828125 22.84375-6.164062 47.363281-6.488281 71.082031-.253907 18.582031-.519531 40.585937-.574219 62.910156.054688 22.226563.320312 44.234375.574219 62.816406.324219 23.714844.660156 48.238281 6.488281 71.078125 5.878906 23.039063 17.183594 41.507813 33.597656 54.894532 17.757813 14.476562 39.433594 22.589843 64.433594 24.109374 35.214844 2.144532 71.476562 3.144532 110.847656 3.046876zm-.953125-90.992188c-68.921875 0-125-56.074219-125-125s56.078125-125 125-125c68.925781 0 125 56.074219 125 125s-56.074219 125-125 125zm0-210c-46.867187 0-85 38.132812-85 85s38.132813 85 85 85c46.871094 0 85-38.132812 85-85s-38.128906-85-85-85zm139-80c-16.566406 0-30 13.429688-30 30s13.433594 30 30 30c16.570313 0 30-13.429688 30-30s-13.429687-30-30-30zm0 0" />
+              </svg>
+            </a>
+          </div>
+          <span class="copy">©2020Lasles<span>VPN</span></span>
+        </div>
+        <nav class="footer-nav">
+          <div class="footer-nav__product footer-nav__item">
+            Товар
+            <ul class="footer-nav__list">
+              <li class="footer-nav__list-item">
+                <a class="footer-nav__link" href="#">Скачать</a>
+              </li>
+              <li class="footer-nav__list-item">
+                <a class="footer-nav__link" href="#">Ценообразование</a>
+              </li>
+              <li class="footer-nav__list-item">
+                <a class="footer-nav__link" href="#">Локации</a>
+              </li>
+              <li class="footer-nav__list-item">
+                <a class="footer-nav__link" href="#">Сервер</a>
+              </li>
+              <li class="footer-nav__list-item">
+                <a class="footer-nav__link" href="#">Страны</a>
+              </li>
+              <li class="footer-nav__list-item">
+                <a class="footer-nav__link" href="#">Блог</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-nav__share footer-nav__item">
+            Участвовать
+            <ul class="footer-nav__list">
+              <li class="footer-nav__list-item">
+                <a class="footer-nav__link" href="#">LaslesVPN</a>
+              </li>
+              <li class="footer-nav__list-item">
+                <a class="footer-nav__link" href="#">FAQ</a>
+              </li>
+              <li class="footer-nav__list-item">
+                <a class="footer-nav__link" href="#">Гайды</a>
+              </li>
+              <li class="footer-nav__list-item">
+                <a class="footer-nav__link" href="#">О нас</a>
+              </li>
+              <li class="footer-nav__list-item">
+                <a class="footer-nav__link" href="#">Конфиденциальность</a>
+              </li>
+              <li class="footer-nav__list-item">
+                <a class="footer-nav__link" href="#">Условия обслуживания</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-nav__money footer-nav__item">
+            Зарабатывать деньги
+            <ul class="footer-nav__list">
+              <li class="footer-nav__list-item">
+                <a class="footer-nav__link" href="#">Партнер</a>
+              </li>
+              <li class="footer-nav__list-item">
+                <a class="footer-nav__link" href="#">Стать партнером</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </div>
-  </section>
+    <div class="sub">
+      <div class="sub-text">
+        Подпишитесь сейчас, чтобы получить специальные функции!<br>
+        <span class="sub__subtitle">Давайте подписываться с нами и найдем удовольствие вместе.</span>
+      </div>
+      <button class="sub__button button_lg">Подпишитесь сейчас</button>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal">
+    <div class="modal-dialog">
+      <div class="modal__title title">Добро пожаловать</div>
+      <span class="modal__close">&#10006</span>
+      <form id="form">
+        <input class="modal__input" type="text" placeholder="Логин">
+        <input class="modal__input" type="password" placeholder="Пароль">
+        <label class="modal__check"><input type="checkbox"> Запомнить</label>
+        <button class="modal__btn button_sm" type="submit">Войти </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,47 @@
+.features {
+  background-color: #ffffff;
+
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__img {
+    max-width: 100%;
+  }
+
+  &-info {
+    max-width: 50%;
+
+    &__title {
+      text-align: left;
+    }
+
+    &__subtitle {
+      max-width: 29.687rem;
+      margin: 0.937rem 0 1rem;
+    }
+
+    &__name {
+      position: relative;
+      padding-left: 2.125rem;
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+      margin-bottom: 10px;
+      color: $color-font;
+      font-weight: 400;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url(../images/icons/check.svg);
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+
+  }
+}

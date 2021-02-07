@@ -1,0 +1,70 @@
+.header {
+
+  &__nav {
+    padding: 0 2.18rem;
+  }
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__desc {
+      width: 50%;
+    }
+
+    &__title {
+      color: #0B132A;
+      font-size: 3.125rem;
+      line-height: 1.4;
+      // width: 42.375rem;
+    }
+
+    &__text {
+      line-height: 1.875;
+      margin: 2.5rem 0;
+      max-width: 95%;
+    }
+
+    &__img {
+      max-width: 100%;
+      width: 50%;
+    }
+  }
+
+  &__content {
+    padding: 5.625rem 0 2.5rem;
+  }
+
+}
+
+.logo {
+  max-width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__link {
+    display: block;
+  }
+}
+
+.menu {
+  &__item {
+    display: inline-block;
+  }
+
+  &__link {
+    display: block;
+    margin-right: 1.06rem;
+    color: $color-font;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}
+

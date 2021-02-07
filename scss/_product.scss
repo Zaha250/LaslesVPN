@@ -1,0 +1,104 @@
+.product {
+  // background: linear-gradient(0deg, #fafafa 30%, #fdfdfd);
+
+  &-text {
+    max-width: 34.687rem;
+    text-align: center;
+
+    &__subtitle {
+      margin: 1.25rem 0 3.75rem;
+    }
+  }
+
+  &__text {
+    margin: 0 auto;
+  }
+
+  &__cards {
+    margin: 0 auto;
+  }
+
+  &-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 68.125rem;
+
+    &__item {
+      text-align: center;
+      background-color: #fff;
+      border: 2px solid #DDDDDD;
+      border-radius: 0.625rem;
+      padding: 5rem 2.2rem 3.125rem;
+      margin-right: 3.125rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.card {
+  flex: 0 1 20.625rem;
+
+  &__img {
+    max-width: 100%;
+  }
+
+  &__title {
+    font-size: 1.125rem;
+    line-height: 1.666;
+    font-weight: 500;
+    color: $black;
+    margin: 1.875rem 0;
+  }
+
+  &-desc {
+    text-align: left;
+    height: 14.375rem;
+
+    &__name {
+      position: relative;
+      padding-left: 2.5rem;
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+      margin-bottom: 0.625rem;
+      color: $color-font;
+      font-weight: 400;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url(../images/icons/done.svg);
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+  }
+
+  &-price {
+    font-size: 1.562rem;
+    line-height: 1.2;
+
+    &__num {
+      color: $black;
+      font-weight: 500;
+    }
+  }
+
+  &__button {
+    margin-top: 1.25rem;
+
+    &:hover {
+      box-shadow: 0px 30px 22px -20px rgba(245, 56, 56, 0.35);
+      transform: translateY(-3px);
+    }
+  }
+}

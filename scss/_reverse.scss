@@ -1,0 +1,93 @@
+.reviews {
+  position: relative;
+
+  &-text {
+    max-width: 34.687rem;
+    text-align: center;
+
+    &__subtitle {
+      margin: 1.25rem 0 3.75rem;
+    }
+  }
+
+  &__text {
+    margin: 0 auto;
+  }
+
+  &__content {
+    color: $black;
+    margin-top: 5px;
+  }
+
+  &-slider {
+    width: 100%;
+
+    &__item {
+      max-width: 25rem;
+      height: 14.375rem;
+      border: 2px solid #ddd;
+      border-radius: 0.625rem;
+      padding: 1.875rem;
+      transition: border .3s;
+
+      &:hover {
+        border-color: $accent-color;
+      }
+    }
+  }
+
+  &-user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__info {
+      display: flex;
+
+      &-wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    &__avatar {
+      width: 3.125rem;
+      height: 3.125rem;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 1.25rem;
+    }
+
+    &__name {
+      color: $black;
+      font-size: 1.125rem;
+      font-weight: 500;
+    }
+
+    &__city {
+      font-size: 0.875rem;
+      line-height: 0.9;
+    }
+
+    &__rating {
+      position: relative;
+      color: $black;
+      padding-right: 1.5rem;
+
+      &::after {
+        content: '';
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-55%);
+        line-height: 16px;
+        background-image: url(../images/icons/star-icon.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,84 @@
+.swiper {
+
+  &-container {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  &-wrapper {
+    margin-bottom: 3.75rem;
+  }
+
+  &-pagination {
+    left: 0;
+
+    &-bullet {
+      width: 0.937rem;
+      height: 0.937rem;
+      background: #DDE0E4;
+      margin-right: 15px;
+      opacity: 1;
+      transition: all .3s;
+
+      &-active {
+        width: 2.812rem;
+        height: 0.937rem;
+        background: $accent-color;
+        border-radius: 1rem;
+      }
+    }
+  }
+
+  &-nav {
+    display: flex;
+    justify-content: flex-end;
+
+  }
+
+  &-buttons {
+    position: relative;
+    width: 8.75rem;
+    height: 3.75rem;
+    margin-right: 10rem;
+  }
+
+  &-button {
+    bottom: 0;
+    width: 3.75rem;
+    height: 3.75rem;
+    cursor: pointer;
+    background-color: $accent-color;
+    border: 2px solid $accent-color;
+    border-radius: 50%;
+    z-index: 2;
+    position: relative;
+
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      fill: currentColor;
+    }
+
+    &-disabled {
+      background-color: #fff;
+
+      svg {
+        color: $accent-color;
+      }
+    }
+
+    &_prev {
+      position: absolute;
+      left: 0;
+    }
+
+    &_next {
+      position: absolute;
+      right: 0;
+    }
+  }
+
+}

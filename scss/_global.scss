@@ -14,6 +14,7 @@ body{
   font-family: $ff-base;
   font-size: 1rem;
   font-weight: 400;
+  line-height: 1.875;
   background-color: #fff;
   color: $color-font;
 }
@@ -34,6 +35,15 @@ li{
 
 a{
   text-decoration: none;
+}
+
+input{
+  font-family: $ff-base;
+  font-size: 1rem;
+
+  &:focus{
+    outline: none;
+  }
 }
 
 .container{
@@ -59,6 +69,22 @@ a{
   &__product{
     padding: 5rem 0;
   }
+
+  &__network{
+    padding-top: 4.375rem;
+  }
+
+  &__reviews{
+    padding: 3.125rem 0 11.25rem;
+  }
+
+  &__footer{
+    padding: 11.25rem 6.75rem 6.25rem;
+  }
+}
+
+.main{
+  background: linear-gradient(0deg, #fdfdfd 50%, #ffffff);
 }
 
 .title{
@@ -68,6 +94,44 @@ a{
   color: $black;
 }
 
-.desc{
+.subtitle {
   line-height: 1.875;
+}
+
+.button {
+  &_sm {
+    min-width: 7.8125rem;
+    height: 2.812rem;
+    color: $accent-color;
+    border-radius: 25px;
+    border: 1px solid $accent-color;
+    background-color: #fff;
+    padding: 0 2.125rem;
+    line-height: 2.812rem;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      color: #fff;
+      background-color: $accent-color;
+    }
+  }
+
+  &_lg {
+    background-color: $accent-color;
+    color: #fff;
+    height: 3.75rem;
+    width: 15.625rem;
+    line-height: 3.75rem;
+    padding: 0 1rem;
+    border-radius: 0.625rem;
+    border: none;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      box-shadow: 0px 30px 22px -20px rgba(245, 56, 56, 0.35);
+      transform: translateY(-3px);
+    }
+
+  }
+
 }

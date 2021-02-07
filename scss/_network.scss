@@ -1,0 +1,59 @@
+.network {
+  // background: linear-gradient(0deg, #fdfdfd 30%, #ffffff);
+
+  &-text {
+    max-width: 34.687rem;
+    text-align: center;
+
+    &__subtitle {
+      margin: 1.25rem 0 6.625rem;
+    }
+  }
+
+  &__text {
+    margin: 0 auto;
+  }
+
+  &__map {
+    margin: 0 auto;
+  }
+
+}
+
+.map {
+  position: relative;
+  max-width: 1060px;
+
+  &__img {
+    width: 100%;
+    max-height: 538px;
+    object-fit: contain;
+  }
+
+}
+
+.spons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  height: 13rem;
+
+  &__link {
+    display: inline-block;
+  }
+
+  &__img {
+    max-width: 100%;
+    width: 11.875rem;
+    height: 72px;
+    filter: gray;
+    filter: grayscale(100%);
+    transition: all .5s;
+
+    &:hover {
+      filter: none;
+    }
+  }
+
+}
