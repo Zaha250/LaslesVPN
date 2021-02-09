@@ -649,6 +649,10 @@ input:focus {
           filter: none;
 }
 
+.map__loc {
+  cursor: pointer;
+}
+
 .map__loc_xl {
   width: 2.75rem;
   height: 2.75rem;
@@ -1055,5 +1059,18 @@ input:focus {
 
 .modal__btn {
   margin-top: 1.25rem;
+}
+
+.tooltip {
+  display: inline-block;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 0.312rem;
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.75);
+          box-shadow: 3px 3px 5px 0px rgba(50, 50, 50, 0.75);
+  padding: 0.312rem 0.5rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.9rem;
 }
 /*# sourceMappingURL=style.css.map */
