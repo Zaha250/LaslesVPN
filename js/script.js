@@ -6,6 +6,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   document.querySelector('.nav__button').addEventListener('click', () => {
     openModal();
+    document.forms.form.login.focus();
   });
 
   modal.addEventListener('click', (e) => {
@@ -137,6 +138,68 @@ window.addEventListener('DOMContentLoaded', () => {
 
   });
 
- 
+  //FORM
+
+  const forms = document.querySelectorAll('form');
+
+  forms.forEach(form => {
+    postData(form);
+  });
+
+  function postData(form) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const message = {
+        load: 'images/icons/spinner.svg',
+        succes: 'Загрузка данных завершена',
+        failed: 'Что-то пошло не так... Попробуйте позже'
+      };
+
+      const messageEl = document.createElement('img');
+      messageEl.src = message.load;
+      messageEl.style.cssText = `
+        display: block;
+        margin: 0 auto;
+      `;
+      form.insertAdjacentElement('afterend', messageEl);
+
+      const request = new XMLHttpRequest();
+      request.open("POST", 'server.php');
+      const formData = new FormData(form);
+      request.send(formData);
+
+      request.addEventListener('load', () => {
+        if (request.status === 200) {
+          console.log(request.response);
+          showThanksModal(message.succes);
+          messageEl.remove();
+          form.reset();
+        }else{
+          showThanksModal(message.failed);
+        }
+      });
+
+    });
+  }
+
+  function showThanksModal(message) {
+    const newModalDialog = document.createElement('div'),
+          prevModalDialog = document.querySelector('.modal-dialog');
+
+    prevModalDialog.style.display = 'none';
+    newModalDialog.classList.add('modal-dialog');
+    newModalDialog.innerHTML = `
+      <div class="modal__title title">${message}</div>
+    `;
+    modal.append(newModalDialog);
+
+    setTimeout(() => {
+      newModalDialog.remove();
+      prevModalDialog.style.display = 'block';
+      closeModal();
+    }, 3000);
+
+  }
 
 });
