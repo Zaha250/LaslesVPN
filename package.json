@@ -1,0 +1,25 @@
+{
+  "name": "laslesvpn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zaha250/LaslesVPN.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zaha250/LaslesVPN/issues"
+  },
+  "homepage": "https://github.com/Zaha250/LaslesVPN#readme",
+  "devDependencies": {
+    "json-server": "^0.16.3",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {}
+}

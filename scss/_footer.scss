@@ -10,6 +10,7 @@
   &-info{
     max-width: 35%;
     text-align: left;
+    margin-right: 1.25rem;
   }
 
   &__social{
@@ -24,6 +25,7 @@
 
     &__item{
       margin-right: 3.75rem;
+      overflow: hidden;
 
       &:last-child{
         margin-right: 0;
@@ -32,6 +34,9 @@
 
     &__list{
       margin-top: 1.25rem;
+      overflow: hidden;
+      transition: .3s;
+
       &-item{
         margin-bottom: 0.625rem;
       }

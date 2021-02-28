@@ -29,10 +29,17 @@
       border-radius: 0.625rem;
       padding: 1.875rem;
       transition: border .3s;
+      margin-right: 3.125rem;
+
+      &:last-child{
+        margin-right: 0;
+      }
 
       &:hover {
         border-color: $accent-color;
       }
+
+      
     }
   }
 

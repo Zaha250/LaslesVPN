@@ -16,23 +16,23 @@
         <div class="menu nav__menu">
           <ul class="menu__list">
             <li class="menu__item">
-              <a class="menu__link" href="#">О нас</a>
+              <a class="menu__link anchor" href="#about">О нас</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Особенности</a>
+              <a class="menu__link anchor" href="#features">Особенности</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Ценообразовение</a>
+              <a class="menu__link anchor" href="#product">Ценообразовение</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Отзывы</a>
+              <a class="menu__link anchor" href="#reviews">Отзывы</a>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="#">Помощь</a>
             </li>
           </ul>
         </div>
-        <button class="nav__button button_sm">Войти</button>
+        <button class="nav__button button_sm" data-modal="modal-login">Войти</button>
       </nav>
       <div class="header-content header__content">
         <div class="header-content__desc">
@@ -50,7 +50,7 @@
   <!-- Main -->
   <main class="main page__main">
     <!-- About -->
-    <section class="about page__about">
+    <section class="about page__about" id="about">
       <div class="container">
         <div class="info-progress about__info">
             <div class="info-progress__item">
@@ -78,7 +78,7 @@
       </div>
     </section>
     <!-- Features -->
-    <section class="features page__features">
+    <section class="features page__features" id="features">
       <div class="container">
         <div class="features-inner">
           <img class="features__img" src="images/features/men.png" alt="Men">
@@ -98,7 +98,7 @@
       </div>
     </section>
     <!-- Product -->
-    <section class="product page__product">
+    <section class="product page__product" id="product">
       <div class="product-text product__text">
         <h2 class="product-text__title title">
           Выберите свой план
@@ -159,7 +159,7 @@
       </div>
     </section>
     <!-- Network -->
-    <section class="network page__network">
+    <section class="network page__network" id="network">
       <div class="container">
         <div class="network-text network__text">
           <h2 class="network-text__title title">
@@ -171,7 +171,7 @@
         </div>
         <div class="map network__map">
           <img class="map__img" src="images/map.svg" alt="Локации городов, использующих VPN">
-          <span class="map__loc map__loc_xl map__loc_1" data-tooltip="city">
+          <span class="map__loc map__loc_xl map__loc_1">
             <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d)">
                 <circle cx="34.2009" cy="22.4883" r="21.6937" fill="white" />
@@ -193,7 +193,7 @@
             </svg>
           
           </span>
-          <span class="map__loc map__loc_xl map__loc_2" data-tooltip="city">
+          <span class="map__loc map__loc_xl map__loc_2">
             <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d)">
                 <circle cx="34.2009" cy="22.4883" r="21.6937" fill="white" />
@@ -215,7 +215,7 @@
             </svg>
           
           </span>
-          <span class="map__loc map__loc_lg map__loc_3" data-tooltip="city">
+          <span class="map__loc map__loc_lg map__loc_3">
             <svg width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d)">
                 <circle cx="29.6562" cy="18.7738" r="18.3702" fill="white" />
@@ -237,7 +237,7 @@
             </svg>
           
           </span>
-          <span class="map__loc map__loc_lg map__loc_4" data-tooltip="city">
+          <span class="map__loc map__loc_lg map__loc_4">
             <svg width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d)">
                 <circle cx="29.6562" cy="18.7738" r="18.3702" fill="white" />
@@ -259,7 +259,7 @@
             </svg>
           
           </span>
-          <span class="map__loc map__loc_lg map__loc_5" data-tooltip="city">
+          <span class="map__loc map__loc_lg map__loc_5">
             <svg width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d)">
                 <circle cx="29.6562" cy="18.7738" r="18.3702" fill="white" />
@@ -281,7 +281,7 @@
             </svg>
           
           </span>
-          <span class="map__loc map__loc_lg map__loc_6" data-tooltip="city">
+          <span class="map__loc map__loc_lg map__loc_6">
             <svg width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d)">
                 <circle cx="29.6562" cy="18.7738" r="18.3702" fill="white" />
@@ -303,7 +303,7 @@
             </svg>
           
           </span>
-          <span class="map__loc map__loc_lg map__loc_7" data-tooltip="city">
+          <span class="map__loc map__loc_lg map__loc_7">
             <svg width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d)">
                 <circle cx="29.6562" cy="18.7738" r="18.3702" fill="white" />
@@ -325,7 +325,7 @@
             </svg>
           
           </span>
-          <span class="map__loc map__loc_lg map__loc_8" data-tooltip="city">
+          <span class="map__loc map__loc_lg map__loc_8">
             <svg width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d)">
                 <circle cx="29.6562" cy="18.7738" r="18.3702" fill="white" />
@@ -347,7 +347,7 @@
             </svg>
           
           </span>
-          <span class="map__loc map__loc_lg map__loc_9" data-tooltip="city">
+          <span class="map__loc map__loc_lg map__loc_9">
             <svg width="59" height="58" viewBox="0 0 59 58" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d)">
                 <circle cx="29.6562" cy="18.7738" r="18.3702" fill="white" />
@@ -369,7 +369,7 @@
             </svg>
           
           </span>
-          <span class="map__loc map__lock_md map__loc_10" data-tooltip="city">
+          <span class="map__loc map__lock_md map__loc_10">
             <svg width="42" height="41" viewBox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d)">
                 <circle cx="21" cy="13.5253" r="12.8124" fill="white" />
@@ -391,7 +391,7 @@
             </svg>
           
           </span>
-          <span class="map__loc map__lock_md map__loc_11" data-tooltip="city">
+          <span class="map__loc map__lock_md map__loc_11">
             <svg width="42" height="41" viewBox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d)">
                 <circle cx="21" cy="13.5253" r="12.8124" fill="white" />
@@ -413,7 +413,7 @@
             </svg>
           
           </span>
-          <span class="map__loc map__lock_md map__loc_12" data-tooltip="city">
+          <span class="map__loc map__lock_md map__loc_12">
             <svg width="42" height="41" viewBox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d)">
                 <circle cx="21" cy="13.5253" r="12.8124" fill="white" />
@@ -435,7 +435,7 @@
             </svg>
           
           </span>
-          <span class="map__loc map__lock_md map__loc_13" data-tooltip="city">
+          <span class="map__loc map__lock_md map__loc_13">
             <svg width="42" height="41" viewBox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d)">
                 <circle cx="21" cy="13.5253" r="12.8124" fill="white" />
@@ -457,7 +457,7 @@
             </svg>
           
           </span>
-          <span class="map__loc map__lock_md map__loc_14" data-tooltip="city">
+          <span class="map__loc map__lock_md map__loc_14">
             <svg width="42" height="41" viewBox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d)">
                 <circle cx="21" cy="13.5253" r="12.8124" fill="white" />
@@ -479,7 +479,7 @@
             </svg>
           
           </span>
-          <span class="map__loc map__lock_md map__loc_15" data-tooltip="city">
+          <span class="map__loc map__lock_md map__loc_15">
             <svg width="42" height="41" viewBox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d)">
                 <circle cx="21" cy="13.5253" r="12.8124" fill="white" />
@@ -501,7 +501,7 @@
             </svg>
           
           </span>
-          <span class="map__loc map__lock_md map__loc_16" data-tooltip="city">
+          <span class="map__loc map__lock_md map__loc_16">
             <svg width="42" height="41" viewBox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d)">
                 <circle cx="21" cy="13.5253" r="12.8124" fill="white" />
@@ -523,7 +523,7 @@
             </svg>
           
           </span>
-          <span class="map__loc map__lock_md map__loc_17" data-tooltip="city">
+          <span class="map__loc map__lock_md map__loc_17">
             <svg width="42" height="41" viewBox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d)">
                 <circle cx="21" cy="13.5253" r="12.8124" fill="white" />
@@ -545,7 +545,7 @@
             </svg>
           
           </span>
-          <span class="map__loc map__lock_md map__loc_18" data-tooltip="city">
+          <span class="map__loc map__lock_md map__loc_18">
             <svg width="42" height="41" viewBox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d)">
                 <circle cx="21" cy="13.5253" r="12.8124" fill="white" />
@@ -567,7 +567,7 @@
             </svg>
           
           </span>
-          <span class="map__loc map__loc_sm map__loc_19" data-tooltip="city">
+          <span class="map__loc map__loc_sm map__loc_19">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d)">
                 <circle cx="15.8381" cy="10.7665" r="9.77574" fill="white" />
@@ -589,7 +589,7 @@
             </svg>
           
           </span>
-          <span class="map__loc map__loc_sm map__loc_20" data-tooltip="city">
+          <span class="map__loc map__loc_sm map__loc_20">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d)">
                 <circle cx="15.8381" cy="10.7665" r="9.77574" fill="white" />
@@ -611,7 +611,7 @@
             </svg>
           
           </span>
-          <span class="map__loc map__loc_sm map__loc_21" data-tooltip="city">
+          <span class="map__loc map__loc_sm map__loc_21">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d)">
                 <circle cx="15.8381" cy="10.7665" r="9.77574" fill="white" />
@@ -633,7 +633,7 @@
             </svg>
           
           </span>
-          <span class="map__loc map__loc_sm map__loc_22" data-tooltip="city">
+          <span class="map__loc map__loc_sm map__loc_22">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d)">
                 <circle cx="15.8381" cy="10.7665" r="9.77574" fill="white" />
@@ -655,7 +655,7 @@
             </svg>
           
           </span>
-          <span class="map__loc map__loc_sm map__loc_23" data-tooltip="city">
+          <span class="map__loc map__loc_sm map__loc_23">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d)">
                 <circle cx="15.8381" cy="10.7665" r="9.77574" fill="white" />
@@ -677,7 +677,7 @@
             </svg>
           
           </span>
-          <span class="map__loc map__loc_sm map__loc_24" data-tooltip="city">
+          <span class="map__loc map__loc_sm map__loc_24">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d)">
                 <circle cx="15.8381" cy="10.7665" r="9.77574" fill="white" />
@@ -699,7 +699,7 @@
             </svg>
           
           </span>
-          <span class="map__loc map__loc_sm map__loc_25" data-tooltip="city">
+          <span class="map__loc map__loc_sm map__loc_25">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d)">
                 <circle cx="15.8381" cy="10.7665" r="9.77574" fill="white" />
@@ -721,7 +721,7 @@
             </svg>
           
           </span>
-          <span class="map__loc map__loc_sm map__loc_26" data-tooltip="city">
+          <span class="map__loc map__loc_sm map__loc_26">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d)">
                 <circle cx="15.8381" cy="10.7665" r="9.77574" fill="white" />
@@ -743,7 +743,7 @@
             </svg>
           
           </span>
-          <span class="map__loc map__loc_sm map__loc_27" data-tooltip="city">
+          <span class="map__loc map__loc_sm map__loc_27">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d)">
                 <circle cx="15.8381" cy="10.7665" r="9.77574" fill="white" />
@@ -765,7 +765,7 @@
             </svg>
           
           </span>
-          <span class="map__loc map__loc_sm map__loc_28" data-tooltip="city">
+          <span class="map__loc map__loc_sm map__loc_28">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d)">
                 <circle cx="15.8381" cy="10.7665" r="9.77574" fill="white" />
@@ -787,7 +787,7 @@
             </svg>
           
           </span>
-          <span class="map__loc map__loc_sm map__loc_29" data-tooltip="city">
+          <span class="map__loc map__loc_sm map__loc_29">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#filter0_d)">
                 <circle cx="15.8381" cy="10.7665" r="9.77574" fill="white" />
@@ -820,7 +820,7 @@
       </div>
     </section>
     <!-- Reviews -->
-    <section class="reviews page__reviews">
+    <section class="reviews page__reviews" id="reviews">
         <div class="reviews-text reviews__text">
           <h2 class="reviews-text__title title">
             Нам доверяют тысячи довольных клиентов
@@ -865,7 +865,7 @@
             LaslesVPN - это частная виртуальная сеть с уникальными функциями и высоким уровнем безопасности.
           </p>
           <div class="social footer__social">
-            <a class="social__link" href="#" title="facebook">
+            <a class="social__link" href="#" data-tooltip="facebook">
               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                 y="0px" viewBox="0 0 155.139 155.139" style="enable-background:new 0 0 155.139 155.139;" xml:space="preserve">
                 <g>
@@ -906,13 +906,13 @@
               </svg>
     
             </a>
-            <a class="social__link" href="#" title="twitter">
+            <a class="social__link" href="#" data-tooltip="twitter">
               <svg height="681pt" viewBox="-21 -81 681.33464 681" width="681pt" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="m200.964844 515.292969c241.050781 0 372.871094-199.703125 372.871094-372.871094 0-5.671875-.117188-11.320313-.371094-16.9375 25.585937-18.5 47.824218-41.585937 65.371094-67.863281-23.480469 10.441406-48.753907 17.460937-75.257813 20.636718 27.054687-16.230468 47.828125-41.894531 57.625-72.488281-25.320313 15.011719-53.363281 25.917969-83.214844 31.808594-23.914062-25.472656-57.964843-41.402344-95.664062-41.402344-72.367188 0-131.058594 58.6875-131.058594 131.03125 0 10.289063 1.152344 20.289063 3.398437 29.882813-108.917968-5.480469-205.503906-57.625-270.132812-136.921875-11.25 19.363281-17.742188 41.863281-17.742188 65.871093 0 45.460938 23.136719 85.605469 58.316407 109.082032-21.5-.660156-41.695313-6.5625-59.351563-16.386719-.019531.550781-.019531 1.085937-.019531 1.671875 0 63.46875 45.171875 116.460938 105.144531 128.46875-11.015625 2.996094-22.605468 4.609375-34.558594 4.609375-8.429687 0-16.648437-.828125-24.632812-2.363281 16.683594 52.070312 65.066406 89.960937 122.425781 91.023437-44.855469 35.15625-101.359375 56.097657-162.769531 56.097657-10.5625 0-21.003906-.605469-31.2617188-1.816407 57.9999998 37.175781 126.8710938 58.871094 200.8867188 58.871094" />
               </svg>
             </a>
-            <a class="social__link" href="#" title="instagram">
+            <a class="social__link" href="#" data-tooltip="instagram">
               <svg height="512pt" viewBox="0 0 512 512.00006" width="512pt" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="m261.039062 512c-1.695312 0-3.390624 0-5.097656-.007812-40.132812.097656-77.214844-.921876-113.277344-3.117188-33.0625-2.011719-63.242187-13.4375-87.28125-33.039062-23.195312-18.914063-39.035156-44.488282-47.078124-76.003907-7-27.4375-7.371094-54.371093-7.726563-80.421875-.257813-18.691406-.5234375-40.839844-.578125-63.363281.0546875-22.617187.320312-44.765625.578125-63.457031.355469-26.046875.726563-52.980469 7.726563-80.421875 8.042968-31.515625 23.882812-57.089844 47.078124-76.003907 24.039063-19.601562 54.21875-31.027343 87.285157-33.039062 36.0625-2.191406 73.152343-3.2148438 113.371093-3.1171875 40.144532-.0859375 77.214844.9257815 113.277344 3.1171875 33.0625 2.011719 63.242188 13.4375 87.28125 33.039062 23.199219 18.914063 39.035156 44.488282 47.078125 76.003907 7 27.4375 7.371094 54.375 7.726563 80.421875.257812 18.691406.527344 40.839844.578125 63.363281v.09375c-.050781 22.523437-.320313 44.671875-.578125 63.363281-.355469 26.046875-.722656 52.980469-7.726563 80.421875-8.042969 31.515625-23.878906 57.089844-47.078125 76.003907-24.039062 19.601562-54.21875 31.027343-87.28125 33.039062-34.535156 2.101562-70.011718 3.125-108.277344 3.125zm-5.097656-40.007812c39.480469.09375 75.730469-.902344 110.945313-3.042969 25-1.519531 46.675781-9.632813 64.433593-24.113281 16.414063-13.386719 27.71875-31.855469 33.597657-54.894532 5.828125-22.839844 6.164062-47.363281 6.488281-71.078125.253906-18.566406.519531-40.558593.574219-62.863281-.054688-22.308594-.320313-44.296875-.574219-62.863281-.324219-23.714844-.660156-48.238281-6.488281-71.082031-5.878907-23.039063-17.183594-41.507813-33.597657-54.894532-17.757812-14.476562-39.433593-22.589844-64.433593-24.109375-35.214844-2.144531-71.464844-3.132812-110.851563-3.046875-39.472656-.09375-75.726562.902344-110.941406 3.046875-25 1.519531-46.675781 9.632813-64.433594 24.109375-16.414062 13.386719-27.71875 31.855469-33.597656 54.894532-5.828125 22.84375-6.164062 47.363281-6.488281 71.082031-.253907 18.582031-.519531 40.585937-.574219 62.910156.054688 22.226563.320312 44.234375.574219 62.816406.324219 23.714844.660156 48.238281 6.488281 71.078125 5.878906 23.039063 17.183594 41.507813 33.597656 54.894532 17.757813 14.476562 39.433594 22.589843 64.433594 24.109374 35.214844 2.144532 71.476562 3.144532 110.847656 3.046876zm-.953125-90.992188c-68.921875 0-125-56.074219-125-125s56.078125-125 125-125c68.925781 0 125 56.074219 125 125s-56.074219 125-125 125zm0-210c-46.867187 0-85 38.132812-85 85s38.132813 85 85 85c46.871094 0 85-38.132812 85-85s-38.128906-85-85-85zm139-80c-16.566406 0-30 13.429688-30 30s13.433594 30 30 30c16.570313 0 30-13.429688 30-30s-13.429687-30-30-30zm0 0" />
@@ -988,7 +988,7 @@
         Подпишитесь сейчас, чтобы получить специальные функции!<br>
         <span class="sub__subtitle">Давайте подписываться с нами и найдем удовольствие вместе.</span>
       </div>
-      <button class="sub__button button_lg">Подпишитесь сейчас</button>
+      <button class="sub__button button_lg" data-modal="modal-email">Подпишитесь сейчас</button>
     </div>
   </footer>
 
@@ -1006,7 +1006,9 @@
     </div>
   </div>
 
+  <!-- Swiper-slider -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="js/script.js"></script>
+  <!-- Main script -->
+  <script src="js/bundle.js"></script>
 </body>
 </html>
