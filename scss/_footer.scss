@@ -1,16 +1,29 @@
 .footer{
   position: relative;
-  background-color: #F8F8F8;
+  background: linear-gradient(0deg, #f6f6f6 25%, #f8f8f8);
 
   &-inner{
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 992px) {
+      flex-direction: column-reverse;
+    }
   }
 
   &-info{
     max-width: 35%;
     text-align: left;
     margin-right: 1.25rem;
+
+    @media (max-width: 992px) {
+      margin-right: 0;
+      max-width: 90%;
+    }
+  }
+
+  &__text{
+    margin-bottom: 1rem;
   }
 
   &__social{
@@ -23,6 +36,10 @@
     font-weight: 500;
     font-size: 1.125rem;
 
+    @media (max-width: 998px) {
+      flex-direction: column-reverse;
+    }
+
     &__item{
       margin-right: 3.75rem;
       overflow: hidden;
@@ -30,12 +47,49 @@
       &:last-child{
         margin-right: 0;
       }
+
+      @media (max-width: 998px) {
+        position: relative;
+        margin-bottom: 1.25rem;
+        margin-right: 3.75rem;
+        border-bottom: 1px solid #ddd;
+        width: 100%;
+        padding-left: 2rem;
+        cursor: pointer;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 1rem;
+          left: 3px;
+          width: 1rem;
+          height: 1rem;
+          border-top: 1px solid #000;
+          border-right: 1px solid #000;
+          transform: translateY(-20%) rotate(-45deg);
+          transition: .2s;
+        }
+
+        &.active {
+          &::before {
+            transform: translateY(-88%) rotate(135deg);
+          }
+
+          .footer-nav__list {
+            max-height: 20rem;
+          }
+        }
+      }
     }
 
     &__list{
       margin-top: 1.25rem;
       overflow: hidden;
       transition: .3s;
+
+      @media (max-width: 998px) {
+        max-height: 0;
+      }
 
       &-item{
         margin-bottom: 0.625rem;

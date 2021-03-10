@@ -1,5 +1,5 @@
 .product {
-  // background: linear-gradient(0deg, #fafafa 30%, #fdfdfd);
+  background: linear-gradient(0deg, #fafafa 30%, #fdfdfd);
 
   &-text {
     max-width: 34.687rem;
@@ -14,15 +14,10 @@
     margin: 0 auto;
   }
 
-  &__cards {
-    margin: 0 auto;
-  }
-
   &-cards {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 68.125rem;
+    justify-content: space-around;
 
     &__item {
       text-align: center;
@@ -30,11 +25,22 @@
       border: 2px solid #DDDDDD;
       border-radius: 0.625rem;
       padding: 5rem 2.2rem 3.125rem;
-      margin-right: 3.125rem;
+      margin-bottom: 1.5rem;
 
-      &:last-child {
-        margin-right: 0;
+      & + & {
+        margin-left: 1rem;
+
+        @media (max-width: 686px) {
+          margin-left: 0;
+        }
       }
+
+      @media (max-width: 1060px) {
+        &:last-child{
+          margin-left: 0;
+        }
+      }
+
     }
   }
 }
@@ -62,14 +68,10 @@
       position: relative;
       padding-left: 2.5rem;
       font-size: 0.875rem;
-      line-height: 1.5rem;
+      line-height: 1.5;
       margin-bottom: 0.625rem;
       color: $color-font;
       font-weight: 400;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
 
       &::before {
         content: '';

@@ -20,6 +20,13 @@
       "avt": "images/reviews/man-3.png",
       "reviews": "«Это очень необычно для моего бизнеса, которому в настоящее время требуется виртуальная частная сеть с высоким уровнем безопасности».",
       "rating": "5"
+    },
+    {
+      "name": "Alex Ён Джоу",
+      "city": "Сеул, Южная Корея",
+      "avt": "images/reviews/man-3.png",
+      "reviews": "«Это оченьеть с высоким уровнем безопасности».",
+      "rating": "5"
     }
   ],
   "request": [
@@ -39,29 +46,9 @@
       "id": 3
     },
     {
-      "login": "132",
-      "password": "222",
-      "id": 4
-    },
-    {
-      "login": "sadas",
-      "password": "213123",
-      "id": 5
-    },
-    {
       "login": "Alex",
       "password": "555",
-      "id": 6
-    },
-    {
-      "login": "asd",
-      "password": "",
-      "id": 7
-    },
-    {
-      "login": "gaga",
-      "password": "1",
-      "id": 8
+      "id": 4
     }
   ]
 }

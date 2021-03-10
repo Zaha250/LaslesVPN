@@ -5,6 +5,7 @@ import modal from './modules/modal';
 import reviews from './modules/reviews';
 import swiper from './modules/swiper';
 import tooltip from './modules/tooltip';
+import menuActive from './modules/menu';
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -16,5 +17,6 @@ window.addEventListener('DOMContentLoaded', () => {
   reviews();
   swiper();
   tooltip();
+  menuActive('.nav__menu','.nav-burger', 'active');
 
 });

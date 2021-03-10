@@ -1,47 +1,76 @@
 .features {
-  background-color: #ffffff;
+    background-color: #ffffff;
 
-  &-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
+    &-inner {
+        background: url('../images/features/men.png') left bottom / 45% no-repeat;
+    }
 
-  &__img {
-    max-width: 100%;
-  }
-
-  &-info {
-    max-width: 50%;
+    &__img {
+        max-width: 100%;
+        width: 45%;
+    }
 
     &__title {
-      text-align: left;
+        text-align: left;
+        max-width: 50%;
+        margin-left: auto;
+
+        @media (max-width: 992px) {
+            font-size: 1.5rem;
+            text-align: center;
+            max-width: 65%;
+            margin: 0 auto 2.8rem;
+        }
+
+        @media (max-width: 768px) {
+            max-width: 80%;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 1.4rem;
+            max-width: 100%;
+            margin-bottom: 1.7rem;
+        }
     }
 
     &__subtitle {
-      max-width: 29.687rem;
-      margin: 0.937rem 0 1rem;
+        max-width: 29.687rem;
+        margin: 0.937rem 0 1rem;
+        max-width: 50%;
+        margin-left: auto;
+
+        @media (max-width: 576px) {
+            text-align: center;
+            max-width: 100%;
+            margin: 0 0 1rem;
+        }
+
     }
 
     &__name {
-      position: relative;
-      padding-left: 2.125rem;
-      font-size: 0.875rem;
-      line-height: 1.5rem;
-      margin-bottom: 10px;
-      color: $color-font;
-      font-weight: 400;
+        position: relative;
+        padding-left: 2.125rem;
+        font-size: 0.875rem;
+        line-height: 1.875;
+        margin-bottom: 10px;
+        color: $color-font;
+        font-weight: 400;
+        max-width: 50%;
+        margin-left: auto;
 
-      &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-image: url(../images/icons/check.svg);
-        width: 1.5rem;
-        height: 1.5rem;
-      }
+        @media (max-width: 768px) {
+            line-height: 1.5;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: url(../images/icons/check.svg);
+            width: 1.5rem;
+            height: 1.5rem;
+        }
     }
 
-  }
 }

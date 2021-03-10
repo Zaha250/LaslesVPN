@@ -11,7 +11,7 @@ function anchors() {
       const sectionPosition = sectionId.getBoundingClientRect().top;
 
       window.scrollBy({
-        top: sectionPosition,
+        top: sectionPosition - 92,
         behavior: 'smooth'
       });
     });
