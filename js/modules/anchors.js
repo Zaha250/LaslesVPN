@@ -1,17 +1,20 @@
 function anchors() {
 
-  document.querySelectorAll('a.anchor').forEach(anchor => {
+  document.querySelectorAll('[data-href]').forEach(anchor => {
     anchor.addEventListener('click', (e) => {
       e.preventDefault();
 
-      const href = anchor.getAttribute('href').substring(1);
+      const nav = document.querySelector('.header__nav'),
+            heightNav = window.getComputedStyle(nav).height;
+
+      const href = anchor.dataset.href.substring(1);
 
       const sectionId = document.getElementById(href);
 
       const sectionPosition = sectionId.getBoundingClientRect().top;
 
       window.scrollBy({
-        top: sectionPosition - 92,
+        top: sectionPosition - parseFloat(heightNav),
         behavior: 'smooth'
       });
     });
